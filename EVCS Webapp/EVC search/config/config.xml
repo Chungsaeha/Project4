@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><widget xmlns="http://www.w3.org/ns/widgets" id="http://www.obigo.com/widget_id/ec338d70d0a47900620e43ffd77f1547" version="1.0.0" viewmodes="fullscreen">
+    <name>New-App</name>
+    <description/>
+    <icon src="icon.png"/>
+    <content src="index.html" type="text/html"/>
+    <author>Obigo</author>
+    <license>Obigo</license>
+    <access origin="*"/>
+
+    <gadgets>
+      <!-- gadget information : Obigo Extension Field (Optional) -->
+      <gadget size="l" description="L">
+        <content src="gadgets/large/index.html" type="text/html"/>
+        <preview src="gadgets/large/preview.png"/>
+      </gadget>
+      <gadget size="m" description="M">
+        <content src="gadgets/medium/index.html" type="text/html"/>
+        <preview src="gadgets/medium/preview.png"/>
+      </gadget>
+      <gadget size="s" description="S">
+        <content src="gadgets/small/index.html" type="text/html"/>
+        <preview src="gadgets/small/preview.png"/>
+        <shortcut src="gadgets/small/shortcut.png"/>
+      </gadget>
+    </gadgets>
+
+    <feature name="http://www.obigo.com/api/applicationmanager.getownerapplication" required="true"><param name="version" value="1.5.3"/></feature>
+    <feature name="http://www.obigo.com/api/vehicle" required="true">
+        <param name="version" value="1.0.0"/>
+    </feature>
+</widget>
